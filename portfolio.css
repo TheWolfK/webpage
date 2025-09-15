@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+body{
+    color: whitesmoke;
+    background-image: linear-gradient(135deg, rgb(92, 92, 214), rgb(151, 174, 239));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img{
+    height: 20vw;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px black;
+    margin-bottom: 20px;
+    animation: img 1s ease-in;
+}
+
+.hero img:hover{
+    transform: scale(1.01);
+
+}
+
+h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+h1 span{
+    color: rgb(243, 243, 17);
+}
+
+.slide-in{ /*h2*/
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 10px 0 20px;
+    opacity: 0.9;
+    font-weight: 600;
+
+}
+
+
+.github{
+    display: inline-block;
+    background-color: palevioletred;
+    color: whitesmoke;
+    /* padding: 12px 25px; */
+    padding: 12px 26px;
+    border: 1px solid black;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    box-shadow: 0px 4px 9px black;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.github:hover{
+    background-color: orangered;
+    color: black;
+}
+
+.cv{
+    display: inline-block;
+    background-color: blueviolet;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: 1px solid black;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    box-shadow: 0px 4px 9px black;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.cv:hover{
+    background-color: yellowgreen;
+    color: whitesmoke;
+}
+
+.social-icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: icons 1s ease-in;
+}
+
+.social-icons a{
+    margin: 0 10px;
+    font-size: 36px;
+    color: whitesmoke;
+    transition: color 0.3s ease, transform 0.3s ease-in;
+}
+
+.social-icons a:hover{
+    color: #ffe259;
+    transform: translateY(-3px);
+}
+
+
+.buttons{
+    animation: icons 1s ease-in;
+}
+@keyframes fade-in{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes img{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes icons{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in{
+    animation: fade-in 1s ease-in;
+}
+
+.slide-in{
+    animation: slide-in 1s ease-in;
+}
